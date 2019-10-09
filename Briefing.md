@@ -21,4 +21,3 @@ Especificaciones del cliente:
 	- La web debe tener un foro para que los clientes puedan poner sus preguntas y opiniones.
 	- La web tendrá una tienda online con carrito de la compra.
 	- La web tendrá un apartado donde se detallaran los servicios veterinarios que se ofrecen.
-	
