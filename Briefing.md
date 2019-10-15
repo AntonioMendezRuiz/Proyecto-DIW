@@ -1,10 +1,8 @@
-# <u>**Entrevista con el cliente**</u>
-
-
+# Briefing
+## Entrevista con el cliente
 
 Especificaciones del cliente: 
 
-- Cliente nos solicita una web para captar clientes y modernizar su imagen corporativa.
 - Contenido visual:
 	- Usaremos su logotipo el cual nos proporciona el cliente. Nos entrega algunas variantes del mismo.
 	- Cliente proporciona imágenes del local y empleados. Nos solicita que usemos algunas imágenes más como 	productos o de animales.
@@ -26,3 +24,15 @@ Especificaciones del cliente:
 - La visión de la empresa es llegar a ser un referente en la veterinaria en españa y con visión a expandirse globalmente.
 - El público objetivo son las peronas con mascotas en las ciudades donde hay sedes de la empresa para los servicios, y la vente de productos a nivel estatal.
 - El mensaje y tono debe infundir confianza y seguridad en la veterinaria.
+
+## Presupuesto
+
+200 euros
+
+## Plazo entrega
+
+2 meses
+
+## Objetivo de la web
+
+El objetivo de la web es captar clientes nuevos y modernizar su imagen corporativa.
