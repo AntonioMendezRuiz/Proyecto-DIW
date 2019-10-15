@@ -24,10 +24,19 @@ Especificaciones del cliente:
 - La visión de la empresa es llegar a ser un referente en la veterinaria en españa y con visión a expandirse globalmente.
 - El público objetivo son las peronas con mascotas en las ciudades donde hay sedes de la empresa para los servicios, y la vente de productos a nivel estatal.
 - El mensaje y tono debe infundir confianza y seguridad en la veterinaria.
+- Antecedentes: es una nueva empresa que quiere darse a conocer.
+- Necesidades: 
 
 ## Presupuesto
 
-200 euros
+APARTADO | PRECIO
+:---:|:---:
+Página web base| 500 euros
+Páginas adicionales| 50 euros
+Foro| 100 euros
+Idioma adicionales| 150 euros
+Tienda online| 900 euros
+Posicionamiento| 500 euros
 
 ## Plazo entrega
 
