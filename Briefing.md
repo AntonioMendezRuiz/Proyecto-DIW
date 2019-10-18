@@ -41,7 +41,7 @@ Galería fotográfica | 80 euros
 Apartado noticias/eventos | 50 euros
 PRECIO TOTAL |2830 euros*
 
-\*Precio total solo incluye una página adicional y un idioma adicional. 
+\*Precio total solo incluye una página adicional y un idioma adicional, no incluye el hosting ni dominio. 
 
 
 
