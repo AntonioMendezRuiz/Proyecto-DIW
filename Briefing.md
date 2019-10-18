@@ -25,7 +25,7 @@ Especificaciones del cliente:
 - El público objetivo son las personas con mascotas en las ciudades donde hay sedes de la empresa para los servicios, y la vente de productos a nivel estatal.
 - El mensaje y tono debe infundir confianza y seguridad en la veterinaria.
 - Antecedentes: es una nueva empresa que quiere darse a conocer.
-- Necesidades: 
+- Necesidades: captar y fidelizar clientes a la vez que establece una imagen corporativa de confianza.
 
 ## Presupuesto
 
