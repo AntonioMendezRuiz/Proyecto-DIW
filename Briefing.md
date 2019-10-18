@@ -19,7 +19,7 @@ Especificaciones del cliente:
 	- Cliente quiere que sus redes sociales sea accesibles desde la web (Facebook, Instagram, Twitter, ...)
 	- La web debe tener un foro para que los clientes puedan poner sus preguntas y opiniones.
 	- La web tendrá una tienda online con carrito de la compra.
-	- La web tendrá un apartado donde se detallaran los servicios veterinarios que se ofrecen.
+	- La web tendrá un apartado donde se detallarán los servicios veterinarios que se ofrecen.
 - La misión de la empresa es la garantía de calidad de productos y servicios para la salud de las mascotas.
 - La visión de la empresa es llegar a ser un referente en la veterinaria en España y con visión a expandirse globalmente.
 - El público objetivo son las personas con mascotas en las ciudades donde hay sedes de la empresa para los servicios, y la vente de productos a nivel estatal.
@@ -47,8 +47,12 @@ PRECIO TOTAL |2830 euros*
 
 ## Plazo entrega
 
-2 meses
+2 meses a partir de la fecha del visto bueno del cliente.
+
+La realización del protipo en una semana.
+
+En caso de retraso se avisará al cliente con antelación.
 
 ## Objetivo de la web
 
-El objetivo de la web es captar clientes nuevos y modernizar su imagen corporativa.
+El objetivo de la web es captar clientes nuevos y establecer su imagen corporativa.
