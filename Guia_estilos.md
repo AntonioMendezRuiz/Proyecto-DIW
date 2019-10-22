@@ -18,15 +18,21 @@
 
 ### 1. Logo
 
-![Logo.png](C:\Users\Mendez\Desktop\Proyecto DIW\Imagenes\Logo.png.png)
+![Logo.png](.\Imagenes\Logo.png.png)
 
-![LogoBlanco.png](C:\Users\Mendez\Desktop\Proyecto DIW\Imagenes\LogoBlanco.png.png)
+![LogoBlanco.png](.\Imagenes\LogoBlanco.png.png)
 
-![LogoNegro.png](C:\Users\Mendez\Desktop\Proyecto DIW\Imagenes\LogoNegro.png.png)
+![LogoNegro.png](.\Imagenes\LogoNegro.png.png)
 
 ### 2. Paleta de colores
 
 ### 3. Tipografía
+
+Títulos: Cinzel
+
+Escogida a partir del logo
+
+Párrafos: Arial
 
 ### 4. Fotografías
 
