@@ -4,8 +4,8 @@
 Especificaciones del cliente: 
 
 - Contenido visual:
-	- Usaremos su logotipo el cual nos proporciona el cliente. Nos entrega algunas variantes del mismo.
-	- Cliente proporciona imágenes del local y empleados. Nos solicita que usemos algunas imágenes más como 	productos o de animales.
+	- Usaremos su logotipo el cual nos proporciona el cliente. Nos entrega algunas 		variantes del mismo.
+	- Cliente proporciona imágenes del local y empleados. Nos solicita que usemos algunas imágenes más como productos o de animales.
 	- La web debe mostrar opiniones de los clientes en la portada de forma dinámica.
 	- La paleta de colores a utilizar debe ser la misma que la del logo.
 	- Debe tener una portada antes de acceder a la pagina principal.
@@ -34,12 +34,14 @@ APARTADO | PRECIO
 Página web base| 500 euros
 Páginas adicionales| 50 euros/por página
 Foro| 100 euros
+Hosting | 100 euros/año
+Dominio| 10 euros/año
 Idioma adicionales| 150 euros/por idioma
 Tienda online| 900 euros
 Posicionamiento nacional | 1000 euros
 Galería fotográfica | 80 euros
 Apartado noticias/eventos | 50 euros
-PRECIO TOTAL |2830 euros*
+PRECIO TOTAL |2940 euros*
 
 \*Precio total solo incluye una página adicional y un idioma adicional, no incluye el hosting ni dominio. 
 
@@ -47,12 +49,12 @@ PRECIO TOTAL |2830 euros*
 
 ## Plazo entrega
 
-2 meses a partir de la fecha del visto bueno del cliente.
+La realización del prototipo será efectiva en una semana y a partir de la cual se tomará el visto bueno del cliente y se comenzará el desarrollo.
 
-La realización del protipo en una semana.
+La entrega del producto final se realizará 2 meses a partir de la fecha del visto bueno del cliente.
 
-En caso de retraso se avisará al cliente con antelación.
+En caso de retraso se avisará al cliente con antelación de al menos 2 semanas.
 
 ## Objetivo de la web
 
-El objetivo de la web es captar clientes nuevos y establecer su imagen corporativa.
+El objetivo de la web es captar clientes nuevos y establecer su imagen corporativa. Al ser una empresa nueva quiere darse a conocer no solo a través de sus servicios sino que también del posicionamiento en la red y la publicidad.
