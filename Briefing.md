@@ -22,7 +22,7 @@ Especificaciones del cliente:
 	- La web tendrá un apartado donde se detallarán los servicios veterinarios que se ofrecen.
 - La misión de la empresa es la garantía de calidad de productos y servicios para la salud de las mascotas.
 - La visión de la empresa es llegar a ser un referente en la veterinaria en España y con visión a expandirse globalmente.
-- El público objetivo son las personas con mascotas en las ciudades donde hay sedes de la empresa para los servicios, y la vente de productos a nivel estatal.
+- El público objetivo son las personas con mascotas en las ciudades donde hay sedes de la empresa para los servicios, y la venta de productos a nivel estatal.
 - El mensaje y tono debe infundir confianza y seguridad en la veterinaria.
 - Antecedentes: es una nueva empresa que quiere darse a conocer.
 - Necesidades: captar y fidelizar clientes a la vez que establece una imagen corporativa de confianza.
@@ -43,7 +43,7 @@ Galería fotográfica | 80 euros
 Apartado noticias/eventos | 50 euros
 PRECIO TOTAL |2940 euros*
 
-\*Precio total solo incluye una página adicional y un idioma adicional, no incluye el hosting ni dominio. 
+\*Precio total solo incluye una página adicional y un idioma adicional.
 
 
 
