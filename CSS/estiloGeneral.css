@@ -1,0 +1,75 @@
+/*Codigos colores
+#88C9F2 azul claro
+#1B70A6 azul oscuro
+#F2AF5C mostaza
+Blanco
+Negro
+*/
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: max-content;
+}
+h1, h2, h3{
+    font-family: "Cinzel";
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-weight: bold;
+}
+header{
+    display: grid;
+    grid-template-columns: max-content max-content auto auto;
+    grid-auto-rows: max-content;
+    align-items: center;
+    justify-items: right;
+    background-color: #88C9F2;
+    color: white;
+    font-family: "Cinzel";
+    font-weight: bold;
+}
+header img{
+    height: 4rem;
+    width: auto;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    justify-self: stretch;
+    grid-column: span 4;
+    background-color: #1B70A6;
+    display: grid;
+    grid-template-columns: repeat(5, max-content);
+    justify-content: right;
+    grid-auto-rows: max-content;
+}
+nav a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    border-bottom: 4px solid #1B70A6;
+}
+nav a:hover{
+    border-bottom: 4px solid #F2AF5C;
+}
+section{
+    padding: 2rem 10% 2rem 10%;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-auto-rows: max-content;
+    justify-content: space-around;
+    padding: 2rem;
+    border-top: 2px solid #1B70A6;
+    background-color: #88C9F2;
+    font-family: "Cinzel";
+    font-weight: bold;
+}
