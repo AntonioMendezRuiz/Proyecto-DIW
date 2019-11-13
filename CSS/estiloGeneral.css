@@ -5,71 +5,183 @@
 Blanco
 Negro
 */
+
 @import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css");
+@media (min-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: max-content;
+    }
+    h1,
+    h2 {
+        font-family: "Cinzel";
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: bold;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        align-items: center;
+        justify-items: right;
+        background-color: #88C9F2;
+        color: white;
+        font-family: "Cinzel";
+        font-weight: bold;
+    }
+    header img {
+        height: 4rem;
+        width: auto;
+    }
+    header a {
+        text-decoration: none;
+        color: white;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: max-content auto auto auto;
+        grid-auto-rows: max-content;
+        padding: 0 10%;
+        justify-self: stretch;
+        justify-items: space-between;
+    }
+    header a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    .dropdown {
+        display: none;
+    }
+    nav {
+        justify-self: stretch;
+        grid-column: span 4;
+        background-color: #1B70A6;
+        display: grid;
+        grid-template-columns: repeat(5, max-content);
+        justify-content: right;
+        grid-auto-rows: max-content;
+        padding: 0 10%;
+    }
+    nav a {
+        text-decoration: none;
+        padding: 1rem;
+        color: white;
+        border-bottom: 4px solid #1B70A6;
+    }
+    nav a:hover {
+        border-bottom: 4px solid #F2AF5C;
+        text-decoration: none;
+        color: #F2AF5C;
+    }
+    section {
+        padding: 2rem 10% 2rem 10%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: max-content;
+        justify-content: space-around;
+        padding: 2rem;
+        border-top: 2px solid #1B70A6;
+        background-color: #88C9F2;
+        font-family: "Cinzel";
+        font-weight: bold;
+    }
 }
-.container{
-    display: grid;
-    grid-template-columns: auto;
-    grid-auto-rows: max-content;
-}
-h1, h2, h3{
-    font-family: "Cinzel";
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-weight: bold;
-}
-header{
-    display: grid;
-    grid-template-columns: max-content max-content auto auto;
-    grid-auto-rows: max-content;
-    align-items: center;
-    justify-items: right;
-    background-color: #88C9F2;
-    color: white;
-    font-family: "Cinzel";
-    font-weight: bold;
-}
-header img{
-    height: 4rem;
-    width: auto;
-}
-header a{
-    text-decoration: none;
-    color: white;
-}
-nav{
-    justify-self: stretch;
-    grid-column: span 4;
-    background-color: #1B70A6;
-    display: grid;
-    grid-template-columns: repeat(5, max-content);
-    justify-content: right;
-    grid-auto-rows: max-content;
-}
-nav a{
-    text-decoration: none;
-    padding: 1rem;
-    color: white;
-    border-bottom: 4px solid #1B70A6;
-}
-nav a:hover{
-    border-bottom: 4px solid #F2AF5C;
-}
-section{
-    padding: 2rem 10% 2rem 10%;
-}
-footer{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-auto-rows: max-content;
-    justify-content: space-around;
-    padding: 2rem;
-    border-top: 2px solid #1B70A6;
-    background-color: #88C9F2;
-    font-family: "Cinzel";
-    font-weight: bold;
+
+@media (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: max-content;
+    }
+    h1,
+    h2 {
+        font-family: "Cinzel";
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        font-weight: bold;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: max-content;
+        align-items: center;
+        justify-items: right;
+        background-color: #88C9F2;
+        color: white;
+        font-family: "Cinzel";
+        font-weight: bold;
+    }
+    header img {
+        height: 4rem;
+        width: auto;
+    }
+    header a {
+        text-decoration: none;
+        color: white;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: max-content auto auto auto;
+        grid-auto-rows: max-content;
+        padding: 0 10%;
+        justify-self: stretch;
+        justify-items: space-between;
+    }
+    header a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    nav {
+        justify-self: stretch;
+        grid-column: span 4;
+        background-color: #1B70A6;
+        display: grid;
+        grid-template-columns: repeat(5, max-content);
+        justify-content: right;
+        grid-auto-rows: max-content;
+        padding: 0 10%;
+    }
+    nav a {
+        text-decoration: none;
+        padding: 1rem;
+        color: white;
+        border-bottom: 4px solid #1B70A6;
+        display: none;
+    }
+    nav a:hover {
+        border-bottom: 4px solid #F2AF5C;
+        text-decoration: none;
+        color: #F2AF5C;
+    }
+    section {
+        padding: 2rem 10% 2rem 10%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: max-content;
+        justify-content: space-around;
+        padding: 2rem;
+        border-top: 2px solid #1B70A6;
+        background-color: #88C9F2;
+        font-family: "Cinzel";
+        font-weight: bold;
+    }
 }
