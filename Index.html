@@ -7,9 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/estiloGeneral.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -17,69 +23,84 @@
     <header>
         <div class="header">
             <a href=""><img src="Imagenes/Logo.png.png"></a>
-            <a href="">
+            <a class="titulo" href="">
                 <h1>Amazonia</h1>
             </a>
-            <p>Telefono de urgencias</p>
+            <div class="telefono">Telefono de urgencias</div>
+            <div class="correo">TheMilubi@gmail.com</div>
+            <div class="idiomas dropdown">
+                <button class="btn text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span><img src="Imagenes/spain-flag-xs.png" alt="ES"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" value="es"><span><img src="Imagenes/spain-flag-xs.png" alt="ES"></span></a>
+                    <a class="dropdown-item" value="uk"><span><img src="Imagenes/united-kingdom-flag-xs.png"
+                                alt="ES"></span></a>
+                    <a class="dropdown-item" value="fr"><span><img src="Imagenes/france-flag-xs.png"
+                                alt="ES"></span></a>
+                </div>
+            </div>
+
+
         </div>
         <nav>
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown button
+                <button class="btn text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="fa fa-bars"></span>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="#">Inicio</a>
+                    <a class="dropdown-item" href="#">Información</a>
+                    <a class="dropdown-item" href="#">Tienda</a>
+                    <a class="dropdown-item" href="#">Foro</a>
+                    <a class="dropdown-item" href="#footer">Contacto</a>
                 </div>
             </div>
             <a href="">Inicio</a>
             <a href="">Información</a>
             <a href="">Tienda</a>
             <a href="">Foro</a>
-            <a href="">Contacto</a>
+            <a href="#footer">Contacto</a>
         </nav>
     </header>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Imagenes/banner1.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="Imagenes/banner2.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="Imagenes/banner3.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
     <div class="container">
 
 
         <section>
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae delectus iste. Fuga fugit id, quia beatae unde vero assumenda voluptate iure quisquam illum facilis ipsa non, earum eligendi nesciunt? Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Fugit consectetur incidunt reiciendis facere expedita, inventore iure dolorem quisquam beatae laborum vitae numquam, suscipit earum, nesciunt odit. Minus quisquam deleniti quaerat? Consequatur distinctio odio quo
-                    eos omnis rem repudiandae natus totam aliquam eum aut quae voluptas aspernatur eveniet veritatis, ipsa suscipit saepe. Velit sapiente maxime repudiandae enim a, nihil nesciunt veritatis! Repellendus, esse. Aspernatur provident, sapiente
-                    distinctio quis, vitae commodi, earum iure enim nisi nesciunt quam ipsam dolore sunt fugit mollitia laborum beatae tempora non sequi architecto dignissimos impedit? Tempore, labore? At, voluptatum laudantium, ipsum enim ad debitis
-                    reiciendis eaque eveniet minus repellat numquam laboriosam beatae, nostrum tempore porro. Aliquam cumque quaerat dicta tenetur explicabo totam magnam rerum quisquam itaque? Voluptate. Soluta tenetur expedita totam dolor repudiandae
-                    sint a laborum voluptate quisquam! Totam rem, veniam suscipit ipsam iste deleniti atque, aliquid architecto commodi dolore veritatis corrupti natus eveniet nobis impedit neque. Voluptatum quod harum quis, consectetur modi vitae perspiciatis.
-                    Sapiente sunt tempore maxime reiciendis laboriosam delectus magni vero at, porro distinctio quae temporibus quas neque autem cupiditate eligendi illo mollitia ex? Quidem repudiandae voluptas porro labore doloribus amet quo praesentium
-                    facere officiis blanditiis corporis architecto consequatur neque rem autem, voluptate ullam cumque ducimus? Maxime, blanditiis! Laboriosam doloribus fugiat officiis harum eius! Sint nostrum reiciendis sunt, labore, hic saepe id magnam
-                    aspernatur quas quod blanditiis, assumenda earum porro fuga! Sequi voluptatibus dolorum natus odit numquam, accusantium asperiores in nemo saepe, dignissimos deserunt? Iste tempora soluta totam eum natus accusamus quos sit culpa. Sed,
-                    cum? Porro temporibus ipsa delectus nesciunt doloribus, dolor fuga, iusto voluptas obcaecati, facere dolore eaque. Maxime excepturi obcaecati asperiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum in sunt quod quam
-                    obcaecati animi corrupti iusto voluptatem incidunt? Tempore tenetur iste saepe nisi voluptatum animi libero provident sint deleniti. Quibusdam provident impedit sapiente. Excepturi magnam obcaecati recusandae, alias nostrum, quos voluptas
-                    vel deleniti, praesentium tempora fugit nemo est iusto accusamus veniam suscipit incidunt dolorem reiciendis magni? Porro, ex veniam. Nesciunt quas quia, porro atque neque itaque ex distinctio mollitia, inventore quo fugiat blanditiis
-                    dicta nostrum. Minus molestiae obcaecati iure. Nemo vero tempore voluptates eos dignissimos veniam consequuntur, corporis quasi? Mollitia assumenda, facilis dignissimos nostrum provident adipisci ut expedita omnis quod ducimus excepturi
-                    itaque totam est at animi reiciendis id earum consectetur enim, quos necessitatibus dolores illum velit. Magni, mollitia! Labore ducimus praesentium est debitis natus aliquid sunt! Ipsa deserunt dolor excepturi suscipit, eos quibusdam!
-                    Maiores odit animi deleniti necessitatibus natus reiciendis? Sequi accusamus odio nostrum illo aut, inventore tempora? Quaerat adipisci deserunt ipsam expedita optio id. Rem perferendis eaque, corporis numquam, iure sequi aperiam ratione,
-                    ducimus repellat maiores consequatur id pariatur temporibus! Ad consequatur reiciendis, voluptas rem officia vel. Quisquam, fugit. Eius nisi quas odio. Illum iste facilis pariatur blanditiis, deleniti odit quia dolorum sit quos consectetur,
-                    doloremque nesciunt recusandae. Ducimus fuga id iusto, accusamus itaque magnam architecto corrupti. Fugit maiores suscipit delectus. Optio nemo at perspiciatis consequuntur enim esse, a suscipit pariatur saepe laborum ratione dolorem
-                    sequi eveniet laboriosam voluptatibus. Mollitia nesciunt sapiente enim ullam veritatis dolores aspernatur? Magnam ipsum tenetur impedit ratione suscipit laudantium numquam maxime vel veritatis sint voluptate excepturi, expedita adipisci.
-                    Ipsa veniam eaque, alias voluptatibus recusandae facere non suscipit reprehenderit quaerat assumenda, placeat distinctio. Ratione tempora incidunt, natus harum dicta, dolore molestiae error reprehenderit aliquam ad soluta qui voluptatem.
-                    Sunt quidem eveniet eligendi quo quasi quos repudiandae, dignissimos laudantium vel, obcaecati rerum, nobis placeat! Cum adipisci unde explicabo et iusto cumque delectus excepturi asperiores? Ea corrupti saepe repellat, sed veritatis
-                    id voluptatem eligendi. Quidem neque quae officia ducimus, explicabo quis expedita perspiciatis sed amet. Perferendis nulla, id sed aliquam sit quo optio inventore dolorem cum maiores nam deserunt voluptatem eveniet eos consequatur
-                    veritatis minima tempora nostrum numquam temporibus, perspiciatis odio voluptatibus ex! Doloribus, provident? Excepturi, nemo fugiat voluptatibus consectetur ratione ipsam animi, adipisci ipsum veritatis aut consequuntur voluptas!
-                    Ut magni harum earum ipsum, aperiam deleniti inventore repellat laboriosam sapiente nostrum enim est! Corporis, nulla. Laborum ipsa nulla quidem quae ipsam aliquid aspernatur fugit omnis laboriosam molestiae voluptates sit excepturi
-                    qui, dicta ducimus at tempore provident. Cumque tempora architecto alias aperiam assumenda ipsum illo mollitia? Accusamus voluptas ducimus nostrum consequuntur eveniet quasi doloribus aperiam molestias minus qui? Veniam cum nesciunt
-                    et, repudiandae quaerat sed consequatur rerum ea similique, deserunt nulla dolore dolorum veritatis minus quasi. Atque eveniet dolorum nam, architecto facere ullam tempora corrupti modi consectetur beatae nihil, eligendi quasi blanditiis
-                    ut, optio excepturi. Consequuntur perspiciatis, mollitia iste in temporibus ratione. Similique maxime pariatur praesentium? Esse harum mollitia, sequi expedita vel doloremque ratione rem quis, consequuntur atque numquam nostrum ex
-                    nam, hic laborum! Architecto modi quos similique saepe dolorem, numquam eligendi nemo nam soluta laudantium. Iste sed doloribus, rerum, in ullam nesciunt nostrum voluptatibus architecto excepturi tempore cum laboriosam commodi? Tempora
-                    nihil quibusdam nostrum, assumenda possimus culpa commodi neque repellendus officiis amet optio, quos totam?
-                </p>
+
             </article>
         </section>
 
 
     </div>
-    <footer>
+    <footer id="footer">
         <div class="direccion">
             <p>Calle noseque</p>
             <p>CP</p>
@@ -104,8 +125,9 @@
             </a>
         </div>
         <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 100%">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6398.057724628204!2d-6.126711632925159!3d36.69784432495331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1573634747339!5m2!1ses!2ses" width="400" height="250" frameborder="0"
-                style="border:0;" allowfullscreen=""></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6398.057724628204!2d-6.126711632925159!3d36.69784432495331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1573634747339!5m2!1ses!2ses"
+                width="400" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
     </footer>
 </body>
