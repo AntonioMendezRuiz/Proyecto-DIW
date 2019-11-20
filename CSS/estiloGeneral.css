@@ -18,8 +18,8 @@ Negro
     }
     header {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: max-content;
+        grid-template-columns: max-content max-content auto auto max-content;
+        grid-template-rows: max-content;
         align-items: center;
         justify-items: right;
         background-color: #88C9F2;
@@ -32,22 +32,14 @@ Negro
         width: auto;
     }
     #demo img {
-        width: auto;
+        width: 100%;
         height: 78.5vh;
     }
     header a {
         text-decoration: none;
         color: white;
     }
-    .header {
-        display: grid;
-        grid-template-columns: max-content auto auto auto max-content;
-        grid-auto-rows: max-content;
-        padding: 0 1rem;
-        justify-self: stretch;
-        align-items: center;
-        justify-items: space-between;
-    }
+    
     header a:hover {
         text-decoration: none;
         color: white;
@@ -57,12 +49,13 @@ Negro
     }
     nav {
         justify-self: stretch;
-        grid-column: span 4;
+        /* grid-column: span 4; */
         background-color: #1B70A6;
         display: grid;
-        grid-template-columns: repeat(5, max-content);
-        justify-content: right;
+        grid-template-columns: repeat(6, max-content);
         grid-auto-rows: max-content;
+        /* justify-content: right; */
+        
         padding: 0 10%;
     }
     nav a {
@@ -103,7 +96,7 @@ Negro
     }
     header {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: max-content auto auto max-content;
         grid-auto-rows: max-content;
         align-items: center;
         align-content: center;
@@ -125,27 +118,17 @@ Negro
         text-decoration: none;
         color: white;
     }
-    .header {
-        display: grid;
-        grid-template-columns: max-content min-content min-content max-content;
-        grid-auto-rows: max-content;
-        padding: 0 .5rem;
-        justify-self: stretch;
-        align-items: center;
-        justify-items: space-between;
-    }
     header a:hover {
         text-decoration: none;
         color: white;
     }
     nav {
         justify-self: stretch;
-        grid-column: span 4;
         background-color: #1B70A6;
         display: grid;
-        grid-template-columns: repeat(5, max-content);
+        grid-template-columns: max-content max-content;
         justify-content: left;
-        grid-auto-rows: max-content;
+        grid-template-rows: max-content;
         padding: 0 .5rem;
     }
     nav a {
@@ -160,7 +143,6 @@ Negro
         text-decoration: none;
         color: #F2AF5C;
     }
-    
     footer {
         display: grid;
         grid-template-columns: repeat(1, max-content);
@@ -186,13 +168,9 @@ Negro
     outline: 0;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
-header{
-    height: 21.5vh;
-}
-
 
 .idiomas.dropdown {
     display: block;
@@ -202,10 +180,10 @@ header{
     min-width: 0;
     width: max-content;
 }
-.idiomas .dropdown-item{
+
+.idiomas .dropdown-item {
     padding: .5rem;
 }
-
 
 .idiomas img {
     height: 1rem;
@@ -217,6 +195,29 @@ h1, h2 {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-weight: bold;
 }
-.telefono, .correo{
+
+.telefono, .correo {
     font-size: .6rem;
+}
+
+.carousel-caption {
+    background-color: #88C9F2;
+    border-radius: 1rem 0;
+    width: 30%;
+    height: 30%;
+    opacity: 92%;
+    animation: "animacion" 3s;
+}
+
+@keyframes animacion {
+    from {
+        opacity: 0;
+        margin-left: -50%;
+        background-color: #1B70A6;
+    }
+    to {
+        margin-left: 0;
+        opacity: 92%;
+        background-color: #88C9F2;
+    }
 }
