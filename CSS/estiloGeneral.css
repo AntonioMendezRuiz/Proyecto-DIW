@@ -190,10 +190,11 @@ footer p {
     width: 1.5rem;
 }
 
-h1, h2 {
+h1, h2, .card-header {
     font-family: "Cinzel";
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-weight: bold;
+    color: white;
 }
 
 .telefono, .correo {
@@ -207,8 +208,20 @@ h1, h2 {
     height: 30%;
     opacity: 92%;
     animation: "animacion" 3s;
+    -webkit-animation:"animacion" 3s ;
 }
-
+.card{
+    height: 90vh;
+}
+.imgop{
+  align-self: center;
+  width: fit-content;
+}
+.opiniones img{
+    display: block;
+    max-width: 5rem;
+    max-height: 5rem;
+}
 @keyframes animacion {
     from {
         opacity: 0;
