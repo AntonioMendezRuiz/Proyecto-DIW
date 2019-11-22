@@ -39,6 +39,9 @@ Negro
         text-decoration: none;
         color: white;
     }
+    nav button{
+        align-self: left;
+    }
     
     header a:hover {
         text-decoration: none;
@@ -46,6 +49,9 @@ Negro
     }
     .dropdown {
         display: none;
+    }
+    .dropdown:active {
+        border: none;
     }
     nav {
         justify-self: stretch;
@@ -203,9 +209,10 @@ h1, h2, .card-header {
 
 .carousel-caption {
     background-color: #88C9F2;
-    border-radius: 1rem 0;
-    width: 30%;
+    border-radius: 1rem;
+    width: 40%;
     height: 30%;
+    margin-left: -20%;
     opacity: 92%;
     animation: "animacion" 3s;
     -webkit-animation:"animacion" 3s ;
@@ -229,7 +236,7 @@ h1, h2, .card-header {
         background-color: #1B70A6;
     }
     to {
-        margin-left: 0;
+        margin-left: -20%;
         opacity: 92%;
         background-color: #88C9F2;
     }
