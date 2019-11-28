@@ -31,14 +31,15 @@ Negro
         height: 4rem;
         width: auto;
     }
-    #demo img {
-        width: 100%;
-        height: 78.5vh;
-    }
     header a {
         text-decoration: none;
         color: white;
     }
+    #demo img {
+        width: 100%;
+        height: 78.5vh;
+    }
+    /*Revisar*/
     nav button{
         align-self: left;
     }
@@ -48,7 +49,7 @@ Negro
         text-decoration: none;
         color: white;
     }
-    
+    /*Revisar*/
     .dropdown {
         display: none;
     }

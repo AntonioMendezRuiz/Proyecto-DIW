@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap')
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css")
+
+$darkBlue : #1B70A6
+$lightBlue : #88C9F2
+$lightOrange : #F2AF5C
+@mixin grid($columnas, $filas:0, $gap:0)
+    display: grid
+    grid-template-columns: repeat($columnas, max-content)
+    @if $filas == 0
+        grid-auto-rows: max-content
+    @else
+        grid-template-rows: repeat($filas, max-content)
+    gap: $gap
+
+@mixin navegador
+    justify-self: stretch
+    background-color: $darkBlue
+    justify-content: right 
+    padding-right: 3%
+    a 
+        text-decoration: none
+        padding: 1rem
+        color: white
+        border-bottom: 4px solid $darkBlue
+        &:hover 
+            border-bottom: 4px solid $lightOrange
+            text-decoration: none
+            color: $lightOrange
+
+@mixin cabecera
+    
+    align-items: center
+    justify-items: right
+    background-color: $lightBlue
+    color: white
+    font-family: "Cinzel"
+    font-weight: bold
+
+    img 
+        height: 4rem
+        width: auto
+
+    a 
+        text-decoration: none
+        color: white
+        &:hover 
+            text-decoration: none
+            color: white
+    
+
+
+
+.container
+    @include grid(1)
+
+header
+    @include grid(5)
+    @include cabecera
+nav
+    @include grid(8)
+    @include navegador
+        
+.dropdown
+    display: none
+    &:active 
+        border: none

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css");
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, max-content);
+  grid-auto-rows: max-content;
+  gap: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  grid-auto-rows: max-content;
+  gap: 0;
+  align-items: center;
+  justify-items: right;
+  background-color: #88C9F2;
+  color: white;
+  font-family: "Cinzel";
+  font-weight: bold;
+}
+header img {
+  height: 4rem;
+  width: auto;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+header a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(8, max-content);
+  grid-auto-rows: max-content;
+  gap: 0;
+  justify-self: stretch;
+  background-color: #1B70A6;
+  justify-content: right;
+  padding-right: 3%;
+}
+nav a {
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  border-bottom: 4px solid #1B70A6;
+}
+nav a:hover {
+  border-bottom: 4px solid #F2AF5C;
+  text-decoration: none;
+  color: #F2AF5C;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown:active {
+  border: none;
+}
+
+/*# sourceMappingURL=estilos.css.map */
