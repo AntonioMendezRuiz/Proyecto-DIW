@@ -6,6 +6,18 @@
 $darkBlue : #1B70A6
 $lightBlue : #88C9F2
 $lightOrange : #F2AF5C
+
+@keyframes animacion 
+    from 
+        opacity: 0
+        margin-left: -50%
+        background-color: $darkBlue 
+    to 
+        margin-left: -10%
+        opacity: 92%
+        background-color: $darkBlue 
+
+
 @mixin grid($columnas, $filas:0, $gap:0)
     display: grid
     grid-template-columns: repeat($columnas, max-content)
@@ -29,9 +41,50 @@ $lightOrange : #F2AF5C
             border-bottom: 4px solid $lightOrange
             text-decoration: none
             color: $lightOrange
+    .lupa
+        align-self: center
+        margin-left: .5rem
+    .busqueda
+        height: 1.5rem
+        width: 8rem
+        align-self: center
+        margin-left: 3rem
+    #registro
+        justify-self: stretch
+        margin-left: 1rem
+        color: white
+        &:hover
+            background-color: $darkBlue
+            color: $darkBlue 
+            border-radius: 5px
+    .myModal
+        .modal-content     
+            border-radius: 10px
+            .modal-footer
+                padding-bottom: 0
+                padding-top: 0
+                background-color: $darkBlue
+                .inicio
+                    padding: 1rem
+                    color: white
+                    border-bottom: 4px solid $darkBlue
+                    &:hover
+                        border-bottom: 4px solid $lightOrange
+                        text-decoration: none
+                        color: $lightOrange
+            .modal-body
+                background-color: $lightBlue
+                .linkregistro
+                    padding: 0
+                    border: 0
+                    &:hover
+                        border:0
+                        color: $darkBlue 
+
+        
+
 
 @mixin cabecera
-    
     align-items: center
     justify-items: right
     background-color: $lightBlue
@@ -49,9 +102,32 @@ $lightOrange : #F2AF5C
         &:hover 
             text-decoration: none
             color: white
-    
+    .telefono, .correo 
+        font-size: .6rem
+    .idiomas
+        img
+            height: 1rem
+            width: 1.5rem
+        .dropdown 
+            display: block
+        .dropdown-menu 
+            min-width: 0
+            width: max-content
+        .dropdown-item 
+            padding: .5rem
 
 
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    outline: 0
+
+h1, h2
+    font-family: "Cinzel"
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+    font-weight: bold
+    color: white
 
 .container
     @include grid(1)
@@ -62,8 +138,44 @@ header
 nav
     @include grid(8)
     @include navegador
-        
+
+.carousel-caption 
+    background-color: #88C9F2
+    border-radius: 1rem
+    width: 40%
+    height: 30%
+    margin-left: -10%
+    opacity: 92%
+    animation: "animacion" 3s
+    -webkit-animation:"animacion" 3s 
+
 .dropdown
     display: none
     &:active 
         border: none
+
+section 
+    padding: 0
+    .card
+        height: 90vh
+
+footer 
+    @include grid(3)
+    justify-content: space-around
+    padding: 2rem
+    border-top: 2px solid $darkBlue
+    background-color: $lightBlue
+    font-family: "Cinzel"
+    font-weight: bold
+
+@media (max-width: 800px)
+    .titulo 
+        display: none
+    header
+        @include grid(4)
+    .none
+        display: none
+    footer
+        @include grid(1,0,.5rem)
+        padding: .5rem
+    

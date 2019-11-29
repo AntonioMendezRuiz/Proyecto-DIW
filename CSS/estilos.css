@@ -2,6 +2,32 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css");
+@keyframes animacion {
+  from {
+    opacity: 0;
+    margin-left: -50%;
+    background-color: #1B70A6;
+  }
+  to {
+    margin-left: -10%;
+    opacity: 92%;
+    background-color: #1B70A6;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+h1, h2 {
+  font-family: "Cinzel";
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-weight: bold;
+  color: white;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(1, max-content);
@@ -33,6 +59,23 @@ header a:hover {
   text-decoration: none;
   color: white;
 }
+header .telefono, header .correo {
+  font-size: 0.6rem;
+}
+header .idiomas img {
+  height: 1rem;
+  width: 1.5rem;
+}
+header .idiomas .dropdown {
+  display: block;
+}
+header .idiomas .dropdown-menu {
+  min-width: 0;
+  width: max-content;
+}
+header .idiomas .dropdown-item {
+  padding: 0.5rem;
+}
 
 nav {
   display: grid;
@@ -55,12 +98,117 @@ nav a:hover {
   text-decoration: none;
   color: #F2AF5C;
 }
+nav .lupa {
+  align-self: center;
+  margin-left: 0.5rem;
+}
+nav .busqueda {
+  height: 1.5rem;
+  width: 8rem;
+  align-self: center;
+  margin-left: 3rem;
+}
+nav #registro {
+  justify-self: stretch;
+  margin-left: 1rem;
+  color: white;
+}
+nav #registro:hover {
+  background-color: #1B70A6;
+  color: #1B70A6;
+  border-radius: 5px;
+}
+nav .myModal .modal-content {
+  border-radius: 10px;
+}
+nav .myModal .modal-content .modal-footer {
+  padding-bottom: 0;
+  padding-top: 0;
+  background-color: #1B70A6;
+}
+nav .myModal .modal-content .modal-footer .inicio {
+  padding: 1rem;
+  color: white;
+  border-bottom: 4px solid #1B70A6;
+}
+nav .myModal .modal-content .modal-footer .inicio:hover {
+  border-bottom: 4px solid #F2AF5C;
+  text-decoration: none;
+  color: #F2AF5C;
+}
+nav .myModal .modal-content .modal-body {
+  background-color: #88C9F2;
+}
+nav .myModal .modal-content .modal-body .linkregistro {
+  padding: 0;
+  border: 0;
+}
+nav .myModal .modal-content .modal-body .linkregistro:hover {
+  border: 0;
+  color: #1B70A6;
+}
+
+.carousel-caption {
+  background-color: #88C9F2;
+  border-radius: 1rem;
+  width: 40%;
+  height: 30%;
+  margin-left: -10%;
+  opacity: 92%;
+  animation: "animacion" 3s;
+  -webkit-animation: "animacion" 3s;
+}
 
 .dropdown {
   display: none;
 }
 .dropdown:active {
   border: none;
+}
+
+section {
+  padding: 0;
+}
+section .card {
+  height: 90vh;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-auto-rows: max-content;
+  gap: 0;
+  justify-content: space-around;
+  padding: 2rem;
+  border-top: 2px solid #1B70A6;
+  background-color: #88C9F2;
+  font-family: "Cinzel";
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-auto-rows: max-content;
+    gap: 0;
+  }
+
+  .none {
+    display: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, max-content);
+    grid-auto-rows: max-content;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

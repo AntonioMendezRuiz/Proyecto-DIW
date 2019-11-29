@@ -16,6 +16,7 @@ Negro
         grid-template-columns: auto;
         grid-auto-rows: max-content;
     }
+
     header {
         display: grid;
         grid-template-columns: max-content max-content auto auto max-content;
@@ -227,6 +228,8 @@ h1, h2, .card-header {
 .card{
     height: 90vh;
 }
+
+/*revisar*/
 .imgop{
   align-self: center;
   width: fit-content;
