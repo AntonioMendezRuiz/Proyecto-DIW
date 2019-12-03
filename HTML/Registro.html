@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Amazonia</title>
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/estilosFormulario.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -16,13 +15,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <title>Amazonia</title>
 </head>
 
 <body>
     <header>
 
-        <a href=""><img src="Imagenes/Logo.png.png">
+        <a href=""><img src="../Imagenes/Logo.png.png">
             <h1 class="titulo">Amazonia</h1>
         </a>
 
@@ -31,13 +30,13 @@
         <div class="idiomas dropdown">
             <button class="btn text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <span><img src="Imagenes/spain-flag-xs.png" alt="ES"></span>
+                <span><img src="../Imagenes/spain-flag-xs.png" alt="ES"></span>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="es"><span><img src="Imagenes/spain-flag-xs.png" alt="ES"></span></a>
-                <a class="dropdown-item" value="uk"><span><img src="Imagenes/united-kingdom-flag-xs.png"
+                <a class="dropdown-item" value="es"><span><img src="../Imagenes/spain-flag-xs.png" alt="ES"></span></a>
+                <a class="dropdown-item" value="uk"><span><img src="../Imagenes/united-kingdom-flag-xs.png"
                             alt="ES"></span></a>
-                <a class="dropdown-item" value="fr"><span><img src="Imagenes/france-flag-xs.png" alt="ES"></span></a>
+                <a class="dropdown-item" value="fr"><span><img src="../Imagenes/france-flag-xs.png" alt="ES"></span></a>
             </div>
         </div>
     </header>
@@ -91,91 +90,22 @@
             </div>
         </div>
     </nav>
-    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="5537" data-keyboard="true">
-
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Imagenes/banner1.jpg" alt="">
-
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-dark">Atención sanitaria de calidad</h5>
-                    <div class="text-dark">para todas tus mascotas</div>
-
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Imagenes/banner2.jpg" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-dark">Tienda Online</h5>
-                    <div class="text-dark">con todo lo que necesitan tus animales</div>
-
-                </div>
-
-            </div>
-            <div class="carousel-item">
-                <img src="Imagenes/banner3.jpg" alt="">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5 class="text-dark">Contacta con nosotros</h5>
-                    <div class="text-dark">responderemos a tus dudas</div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Left and right controls  -->
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <!-- <span class="fa fa-hand-o-left text-dark"></span> -->
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <!-- <span class="fa fa-hand-o-right text-dark"></span> -->
-        </a>
-
+    <div class="contenedor">
+        <form action="">
+                <p>Nombre</p>
+                <input type="text">
+                <p>Apellidos</p>
+                <input type="text">
+                <p>E-mail</p>
+                <input type="text">
+                <p>Contraseña</p>
+                <input type="password">
+                <p>Repita contraseña</p>
+                <input type="pasword">
+                <input type="checkbox"> <p class = "condiciones">Acepta las condiciones de uso.</p> 
+                <input type="submit" value="Registrarse">
+        </form>
     </div>
-    <div class="container">
-
-
-        <section class="mt-5 mb-5">
-            <article>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md">
-                            <div class="card">
-                                <img class="card-img-top" src="Imagenes/imagen-tarjeta1.png">
-                                <div class="card-body">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                        lectus sem,
-                                        tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
-                                        nec tortor sit amet, maximus mattis dui. </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md">
-                            <div class="card">
-                                <div class="card-header">
-                                    Opiniones
-                                </div>
-
-                                <div class="card-body">
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                                        lectus sem,
-                                        tempor vitae mattis malesuada, ornare sed erat. Pellentesque nulla dui, congue
-                                        nec tortor sit amet, maximus mattis dui. </p>
-
-                                </div>
-                                <img class="card-img-bottom imgop" src="Imagenes/LogoNegro.png.png">
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-    </div>
-    </article>
-    </section>
-
     <footer id="footer">
 
 

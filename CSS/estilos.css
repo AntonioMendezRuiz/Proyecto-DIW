@@ -6,12 +6,12 @@
   from {
     opacity: 0;
     margin-left: -50%;
-    background-color: #1B70A6;
+    background-color: #88C9F2;
   }
   to {
-    margin-left: -10%;
+    margin-left: -20%;
     opacity: 92%;
-    background-color: #1B70A6;
+    background-color: #88C9F2;
   }
 }
 * {
@@ -26,26 +26,27 @@ h1, h2 {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-weight: bold;
   color: white;
+  float: right;
+  padding-top: 0.5rem;
+  margin-bottom: 0;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(1, max-content);
-  grid-auto-rows: max-content;
-  gap: 0;
+h3, h4 {
+  font-family: "Cinzel";
+  text-decoration: underline;
 }
 
 header {
   display: grid;
-  grid-template-columns: repeat(5, max-content);
+  grid-template-columns: repeat(4, max-content);
   grid-auto-rows: max-content;
   gap: 0;
   align-items: center;
-  justify-items: right;
+  justify-items: center;
   background-color: #88C9F2;
   color: white;
-  font-family: "Cinzel";
   font-weight: bold;
+  justify-content: space-between;
 }
 header img {
   height: 4rem;
@@ -60,21 +61,7 @@ header a:hover {
   color: white;
 }
 header .telefono, header .correo {
-  font-size: 0.6rem;
-}
-header .idiomas img {
-  height: 1rem;
-  width: 1.5rem;
-}
-header .idiomas .dropdown {
-  display: block;
-}
-header .idiomas .dropdown-menu {
-  min-width: 0;
-  width: max-content;
-}
-header .idiomas .dropdown-item {
-  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 nav {
@@ -101,6 +88,7 @@ nav a:hover {
 nav .lupa {
   align-self: center;
   margin-left: 0.5rem;
+  cursor: pointer;
 }
 nav .busqueda {
   height: 1.5rem;
@@ -110,50 +98,68 @@ nav .busqueda {
 }
 nav #registro {
   justify-self: stretch;
-  margin-left: 1rem;
   color: white;
 }
 nav #registro:hover {
   background-color: #1B70A6;
-  color: #1B70A6;
-  border-radius: 5px;
+  cursor: pointer;
 }
-nav .myModal .modal-content {
+
+.idiomas img {
+  height: 1rem;
+  width: 1.5rem;
+}
+
+.idiomas.dropdown {
+  display: block;
+}
+
+.dropdown-menu {
+  min-width: 0;
+  width: max-content;
+}
+
+.dropdown-item {
+  padding: 0.5rem;
+}
+
+.modal-header {
+  background-color: #1B70A6;
+}
+
+.modal-content {
   border-radius: 10px;
 }
-nav .myModal .modal-content .modal-footer {
+
+.modal-footer {
   padding-bottom: 0;
   padding-top: 0;
   background-color: #1B70A6;
 }
-nav .myModal .modal-content .modal-footer .inicio {
+
+.inicio {
   padding: 1rem;
   color: white;
   border-bottom: 4px solid #1B70A6;
 }
-nav .myModal .modal-content .modal-footer .inicio:hover {
+.inicio:hover {
   border-bottom: 4px solid #F2AF5C;
   text-decoration: none;
   color: #F2AF5C;
 }
-nav .myModal .modal-content .modal-body {
-  background-color: #88C9F2;
-}
-nav .myModal .modal-content .modal-body .linkregistro {
-  padding: 0;
-  border: 0;
-}
-nav .myModal .modal-content .modal-body .linkregistro:hover {
-  border: 0;
-  color: #1B70A6;
+
+#demo img {
+  width: 100%;
+  height: 78.5vh;
 }
 
 .carousel-caption {
   background-color: #88C9F2;
   border-radius: 1rem;
   width: 40%;
-  height: 30%;
-  margin-left: -10%;
+  height: auto;
+  padding-left: 10%;
+  margin-left: -20%;
   opacity: 92%;
   animation: "animacion" 3s;
   -webkit-animation: "animacion" 3s;
@@ -173,6 +179,15 @@ section .card {
   height: 90vh;
 }
 
+.imgop {
+  align-self: center;
+  width: fit-content;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
 footer {
   display: grid;
   grid-template-columns: repeat(3, max-content);
@@ -182,10 +197,33 @@ footer {
   padding: 2rem;
   border-top: 2px solid #1B70A6;
   background-color: #88C9F2;
-  font-family: "Cinzel";
   font-weight: bold;
 }
 
+.desarrolladores {
+  background: #88C9F2;
+  text-align: center;
+}
+
+.modal-body {
+  background-color: #88C9F2;
+}
+
+.linkregistro {
+  padding: 0;
+  border: 0;
+}
+.linkregistro:hover {
+  border: 0;
+  color: #1B70A6;
+}
+
+@media (max-width: 950px) {
+  #demo img {
+    width: 100%;
+    height: auto;
+  }
+}
 @media (max-width: 800px) {
   .titulo {
     display: none;
@@ -193,13 +231,33 @@ footer {
 
   header {
     display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-auto-rows: max-content;
+    gap: 0;
+  }
+
+  .correo, .telefono {
+    display: none;
+  }
+
+  .none {
+    display: none;
+  }
+
+  nav {
+    justify-content: left;
+    display: grid;
     grid-template-columns: repeat(4, max-content);
     grid-auto-rows: max-content;
     gap: 0;
   }
 
-  .none {
-    display: none;
+  section {
+    padding: 0;
+  }
+  section .card {
+    height: auto;
+    width: 100%;
   }
 
   footer {
@@ -208,6 +266,14 @@ footer {
     grid-auto-rows: max-content;
     gap: 0.5rem;
     padding: 0.5rem;
+  }
+
+  .dropdown {
+    display: grid;
+  }
+
+  iframe {
+    width: 100%;
   }
 }
 

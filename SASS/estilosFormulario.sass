@@ -1,0 +1,28 @@
+@import estilos.css
+
+@mixin flex
+    display: flex
+    flex-flow: row wrap
+
+
+
+
+.contenedor
+    @include flex
+    justify-content: center
+    form
+        @include flex
+        width: 50%
+        p
+            width: 30%
+        input
+            width: 70%
+            height: 2rem
+        .condiciones
+            width: 70%
+            margin: 0
+        input[type ="checkbox"]
+            width: 30%
+            height: 1rem
+            align-self: center
+

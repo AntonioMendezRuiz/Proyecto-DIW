@@ -1,0 +1,29 @@
+@import "estilos.css";
+.contenedor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.contenedor form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+}
+.contenedor form p {
+  width: 30%;
+}
+.contenedor form input {
+  width: 70%;
+  height: 2rem;
+}
+.contenedor form .condiciones {
+  width: 70%;
+  margin: 0;
+}
+.contenedor form input[type=checkbox] {
+  width: 30%;
+  height: 1rem;
+  align-self: center;
+}
+
+/*# sourceMappingURL=estilosFormulario.css.map */
