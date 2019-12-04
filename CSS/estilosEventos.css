@@ -1,0 +1,12 @@
+@import "estilos.css";
+.container {
+  padding: 2rem;
+}
+.container .row {
+  height: 78.5vh;
+}
+.container .row .card {
+  height: 90%;
+}
+
+/*# sourceMappingURL=estilosEventos.css.map */

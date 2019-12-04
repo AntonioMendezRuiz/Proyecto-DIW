@@ -105,9 +105,32 @@ nav #registro:hover {
   cursor: pointer;
 }
 
-.idiomas img {
-  height: 1rem;
-  width: 1.5rem;
+.idiomas {
+  cursor: pointer;
+}
+.idiomas #es {
+  background-image: url("../Imagenes/banderas_sprites.png");
+  background-repeat: no-repeat;
+  background-position: -1.3px -0.75px;
+  background-size: 67px 41px;
+  height: 23.5px;
+  width: 31.1px;
+}
+.idiomas #uk {
+  background-image: url("../Imagenes/banderas_sprites.png");
+  background-repeat: no-repeat;
+  background-position: -1.3px -24px;
+  background-size: 67px 41px;
+  height: 23.5px;
+  width: 31.1px;
+}
+.idiomas #fr {
+  background-image: url("../Imagenes/banderas_sprites.png");
+  background-repeat: no-repeat;
+  background-position: -34.7px -0.75px;
+  background-size: 67px 41px;
+  height: 23.5px;
+  width: 31.1px;
 }
 
 .idiomas.dropdown {

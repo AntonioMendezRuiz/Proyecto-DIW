@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../CSS/estilosFormulario.css">
+    <link rel="stylesheet" href="../CSS/estilosEventos.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -30,12 +30,18 @@
         <div class="idiomas dropdown">
             <button class="btn text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
-                <div id = "es"></div></span>
+                <div id="es"></div></span>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" value="es"><span id="size"></span><div id = "es"></div></span></a>
-                <a class="dropdown-item" value="uk"><div id = "uk"></div></a>
-                <a class="dropdown-item" value="fr"><div id = "fr"></div></a>
+                <a class="dropdown-item" value="es"><span id="size"></span>
+                    <div id="es"></div></span>
+                </a>
+                <a class="dropdown-item" value="uk">
+                    <div id="uk"></div>
+                </a>
+                <a class="dropdown-item" value="fr">
+                    <div id="fr"></div>
+                </a>
             </div>
         </div>
     </header>
@@ -77,7 +83,7 @@
                             <p>Constraseña</p>
                             <input type="password" name="" id="pass">
                         </form>
-                        <a href="" class="linkregistro">¿Todavia no tienes cuenta?</a>
+                        <a href="Registro.html" class="linkregistro">¿Todavia no tienes cuenta?</a>
                     </div>
                     <div class="modal-footer darkazul">
                         <button type="button" class="btn btn-default inicio" data-dismiss="modal">Iniciar
@@ -89,21 +95,54 @@
             </div>
         </div>
     </nav>
-    <div class="contenedor">
-        <form action="">
-                <p>Nombre</p>
-                <input type="text">
-                <p>Apellidos</p>
-                <input type="text">
-                <p>E-mail</p>
-                <input type="text">
-                <p>Contraseña</p>
-                <input type="password">
-                <p>Repita contraseña</p>
-                <input type="password">
-                <input type="checkbox"> <p class = "condiciones">Acepta las condiciones de uso.</p> 
-                <input type="submit" value="Registrarse" class= "enviar">
-        </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card mb-4 bg-dark text-white">
+                    <img class="card-img" src="../Imagenes/03.jpg.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 bg-dark text-white">
+                    <img class="card-img" src="../Imagenes/01.jpg.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card bg-primary">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the first card</p>
+                </div>
+            </div>
+            <div class="card bg-warning">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the second card</p>
+                </div>
+            </div>
+            <div class="card bg-success">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the third card</p>
+                </div>
+            </div>
+            <div class="card bg-danger">
+                <div class="card-body text-center">
+                    <p class="card-text">Some text inside the fourth card</p>
+                </div>
+            </div>
+        </div>
+
     </div>
     <footer id="footer">
 
