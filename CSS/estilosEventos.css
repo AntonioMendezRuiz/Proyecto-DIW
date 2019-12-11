@@ -15,13 +15,16 @@
   background: #1B70A6;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) {
   #cartas {
-    height: auto;
+    height: max-content;
   }
 
   #secundarias {
     height: auto;
+    min-width: 40%;
+    margin-bottom: 4rem;
+    padding: 0.7rem;
   }
 }
 

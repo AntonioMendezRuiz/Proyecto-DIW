@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../SASS/estilosEventos.sass"],"names":[],"mappings":"AAAQ;AAMR;EACI;;;AAGJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI,YAfQ;;;AAkBZ;EACI;IACI;;;EAEJ;IACI","file":"estilosEventos.css"}
+{"version":3,"sourceRoot":"","sources":["../SASS/estilosEventos.sass"],"names":[],"mappings":"AAAQ;AAMR;EACI;;;AAGJ;EACI;;;AAEJ;EACI;;;AAEJ;EACI,YAfQ;;;AAkBZ;EACI;IACI;;;EAEJ;IACI;IACA;IACA;IACA","file":"estilosEventos.css"}
