@@ -4,29 +4,33 @@ $darkBlue : #1B70A6
 $lightBlue : #88C9F2
 $lightOrange : #F2AF5C
 
+
 .container
     padding: 2rem
-  
+
 
 #cartas
     height: 110vh
 
 #secundarias
     height: 50vh
+    padding-top: .5rem
 
 .card
     background: $darkBlue
+    
 
 
-@media (max-width: 980px)
+@media (max-width: 990px) , (orientation: portrait)
     #cartas
         height: max-content
     
     #secundarias
         height: auto
         min-width: 40%
-        margin-bottom: 4rem
+        margin-bottom: 2rem
         padding: .7rem
+
 
 
  

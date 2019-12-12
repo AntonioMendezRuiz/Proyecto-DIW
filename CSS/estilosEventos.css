@@ -9,13 +9,14 @@
 
 #secundarias {
   height: 50vh;
+  padding-top: 0.5rem;
 }
 
 .card {
   background: #1B70A6;
 }
 
-@media (max-width: 980px) {
+@media (max-width: 990px), (orientation: portrait) {
   #cartas {
     height: max-content;
   }
@@ -23,7 +24,7 @@
   #secundarias {
     height: auto;
     min-width: 40%;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     padding: 0.7rem;
   }
 }
