@@ -1,7 +1,44 @@
 @import 'estilos.sass'
 
-#seccion
-    @include grid(4)
-    img
-        width: auto
-        height: 150px
+$darkBlue : #1B70A6
+$lightBlue : #88C9F2
+$lightOrange : #F2AF5C
+section
+    @include grid(2,0,2rem)
+    justify-content: space-between
+    #productos
+        margin: 3rem
+        width: 90%
+        @include grid(4, 0, 2rem)
+        img
+            width: auto
+            height: 150px
+        div
+            &:hover
+                cursor: pointer
+            h3
+                font-size: 1rem
+                font-family: arial
+            span
+                font-size: .7rem
+    #carrito
+        width: 26vw
+        height: 420px
+        background-color: $darkBlue
+        h3
+            padding: 1rem
+            font-family: arial
+            color: white
+            text-decoration: none
+        #lista
+            height: 72.18%
+            background-color: $lightBlue
+        a
+            text-decoration: none
+            padding: 1rem
+            color: white
+            border-bottom: 4px solid $darkBlue
+            &:hover
+                border-bottom: 4px solid $lightOrange
+                text-decoration: none
+                color: $lightOrange

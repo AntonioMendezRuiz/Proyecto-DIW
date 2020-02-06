@@ -306,15 +306,60 @@ footer {
     width: 100%;
   }
 }
-#seccion {
+section {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-auto-rows: max-content;
+  gap: 2rem;
+  justify-content: space-between;
+}
+section #productos {
+  margin: 3rem;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(4, max-content);
   grid-auto-rows: max-content;
-  gap: 0;
+  gap: 2rem;
 }
-#seccion img {
+section #productos img {
   width: auto;
   height: 150px;
+}
+section #productos div:hover {
+  cursor: pointer;
+}
+section #productos div h3 {
+  font-size: 1rem;
+  font-family: arial;
+}
+section #productos div span {
+  font-size: 0.7rem;
+}
+section #carrito {
+  width: 26vw;
+  height: 420px;
+  background-color: #1B70A6;
+}
+section #carrito h3 {
+  padding: 1rem;
+  font-family: arial;
+  color: white;
+  text-decoration: none;
+}
+section #carrito #lista {
+  height: 72.18%;
+  background-color: #88C9F2;
+}
+section #carrito a {
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  border-bottom: 4px solid #1B70A6;
+}
+section #carrito a:hover {
+  border-bottom: 4px solid #F2AF5C;
+  text-decoration: none;
+  color: #F2AF5C;
 }
 
 /*# sourceMappingURL=tienda.css.map */
