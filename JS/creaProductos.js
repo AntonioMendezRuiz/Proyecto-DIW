@@ -10,8 +10,10 @@ $(document).ready(() => {
             respuesta.forEach((producto, index) => {
                 $('#productos').html($('#productos').html() + `<div id=${index}><img src="${producto.url}"><br><br><h3>${producto.producto}</h3><span>${producto.descripcion}</span><br><span>${producto.precio}€</span></div>`)
             })
-        }
-    });
-    $('#productos > div').css({'background-color': 'blue'})
+            $('#productos > div').click(() => {
 
+            })
+        }
+
+    })
 })
