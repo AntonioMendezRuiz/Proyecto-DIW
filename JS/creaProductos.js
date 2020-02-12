@@ -1,22 +1,39 @@
+var lista = []
 function muestraLista(lista) {
     $('#lista').html('')
-    lista.forEach((producto) => {
-        $('#lista').html($('#lista').html() + `<div><p>${producto.producto}<p><input onchange='calculaPrecio(this, ${producto.precio})' type='number' value='1' min='1'><span name='precio'>${producto.precio}€</span><span onclick='eliminar(${index},${lista})' class='fa fa-trash'><span></div>`)
+    lista.forEach((producto, index) => {
+        $('#lista').html($('#lista').html() + `<div><div>${producto.producto}</div><input onchange='calculaPrecio(this, ${producto.precio})' type='number' value='1' min='1'><span name='precio'>${producto.precio}€</span><span onclick='eliminar(${index})' class='fa fa-trash'><span></div>`)
     })
+    calculaPrecioFinal()
 }
 function calculaPrecio(input, precio) {
     var cantidad = input.value
     //console.log(cantidad)
     //console.log(precio)
     $(input).next().html(`${cantidad * precio}€`)
-
+    calculaPrecioFinal()
 }
-function eliminar(indice, lista) {
+function calculaPrecioFinal() {
+    var precioFinal = 0
+    $('span[name=precio]').each(function (i, val) {
+        var precio = $(val).html()
+        precioFinal += Number(precio.replace('€', ''))
+    })
+    if (precioFinal < 200) {
+        precioFinal += 15
+        $('#envio').html('* Gastos de envío: 15€')
+    }
+    else{
+        $('#envio').html('')
+    }
+    $('#precioFinal').html(`Total: ${precioFinal}€`)
+}
+function eliminar(indice) {
     lista.splice(indice, 1)
     muestraLista(lista)
 }
 $(document).ready(() => {
-    var lista = []
+
     $.ajax({
         url: "../JSON/productos.json",
         method: "GET",

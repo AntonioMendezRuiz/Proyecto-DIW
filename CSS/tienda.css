@@ -307,15 +307,12 @@ footer {
   }
 }
 section {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  grid-auto-rows: max-content;
-  gap: 2rem;
+  display: flex;
   justify-content: space-between;
 }
 section #productos {
   margin: 3rem;
-  width: 90%;
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(4, max-content);
   grid-auto-rows: max-content;
@@ -336,9 +333,9 @@ section #productos div span {
   font-size: 0.7rem;
 }
 section #carrito {
-  width: 26vw;
-  height: 420px;
   background-color: #1B70A6;
+  height: max-content;
+  width: 25vw;
 }
 section #carrito h3 {
   padding: 1rem;
@@ -346,9 +343,36 @@ section #carrito h3 {
   color: white;
   text-decoration: none;
 }
+section #carrito #footerC {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+  height: max-content;
+}
+section #carrito #footerC #precioFinal {
+  color: white;
+}
 section #carrito #lista {
-  height: 72.18%;
+  height: 400px;
   background-color: #88C9F2;
+  overflow: scroll;
+  padding: 1rem;
+}
+section #carrito #lista div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section #carrito #lista div div {
+  width: 40%;
+}
+section #carrito #lista div span {
+  width: 10%;
+  text-align: right;
+}
+section #carrito #lista div input {
+  width: 3rem;
 }
 section #carrito a {
   text-decoration: none;
