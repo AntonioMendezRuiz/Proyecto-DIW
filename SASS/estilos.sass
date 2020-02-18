@@ -205,6 +205,24 @@ section
     height: 50px
     border-radius: 50%
 
+.video
+    display: flex
+    justify-content: center
+    position: relative
+    z-index: -1
+    video
+        width: 50%
+    .controles
+        position: absolute
+        width: 50%
+        z-index: 100
+        display: flex
+        bottom: 0
+        background-color: $darkBlue
+        height: max-content
+        padding: .5rem
+        opacity: 60%
+
 footer 
     @include grid(3)
     justify-content: space-around

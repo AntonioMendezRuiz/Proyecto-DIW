@@ -218,6 +218,27 @@ section .card {
   border-radius: 50%;
 }
 
+.video {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: -1;
+}
+.video video {
+  width: 50%;
+}
+.video .controles {
+  position: absolute;
+  width: 50%;
+  z-index: 100;
+  display: flex;
+  bottom: 0;
+  background-color: #1B70A6;
+  height: max-content;
+  padding: 0.5rem;
+  opacity: 60%;
+}
+
 footer {
   display: grid;
   grid-template-columns: repeat(3, max-content);
