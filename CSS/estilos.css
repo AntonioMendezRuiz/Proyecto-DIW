@@ -222,7 +222,6 @@ section .card {
   display: flex;
   justify-content: center;
   position: relative;
-  z-index: -1;
 }
 .video video {
   width: 50%;
@@ -232,11 +231,27 @@ section .card {
   width: 50%;
   z-index: 100;
   display: flex;
+  align-items: center;
   bottom: 0;
   background-color: #1B70A6;
   height: max-content;
   padding: 0.5rem;
   opacity: 60%;
+}
+.video .controles * {
+  margin-right: 2%;
+}
+.video .controles span {
+  min-width: max-content;
+}
+.video .controles span#play {
+  display: none;
+}
+.video .controles #progress {
+  width: 70%;
+}
+.video .controles #volume {
+  width: 15%;
 }
 
 footer {
@@ -324,6 +339,13 @@ footer {
   }
 
   iframe {
+    width: 100%;
+  }
+
+  .video video {
+    width: 100%;
+  }
+  .video .controles {
     width: 100%;
   }
 }

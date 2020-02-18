@@ -209,7 +209,6 @@ section
     display: flex
     justify-content: center
     position: relative
-    z-index: -1
     video
         width: 50%
     .controles
@@ -217,11 +216,24 @@ section
         width: 50%
         z-index: 100
         display: flex
+        align-items: center
         bottom: 0
         background-color: $darkBlue
         height: max-content
         padding: .5rem
         opacity: 60%
+        *
+            margin-right: 2%
+        span
+            min-width: max-content
+            &#play
+                display: none
+        #progress
+            width: 70%
+            
+        #volume
+            width: 15%
+
 
 footer 
     @include grid(3)
@@ -280,4 +292,12 @@ footer
 
     iframe 
         width: 100%
+    
+    .video 
+        video
+            width: 100%
+        .controles
+            width: 100%
+        
+            
     
