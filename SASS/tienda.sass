@@ -5,27 +5,38 @@ $lightBlue : #88C9F2
 $lightOrange : #F2AF5C
 section
     display: flex
+    flex-flow: row wrap
     justify-content: space-between
     #productos
-        margin: 3rem
-        width: 60%
-        @include grid(4, 0, 2rem)
-        img
-            width: auto
-            height: 150px
+        padding: 1rem
+        margin: rem
+        width: 70%
+        display: flex
+        flex-flow: row wrap
+        justify-items: center
+        justify-content: space-between
         div
-            &:hover
-                cursor: pointer
-            h3
-                font-size: 1rem
-                font-family: arial
-            span
-                font-size: .7rem
+            
+            width: 30%
+            margin: .5rem
+            img
+                width: auto
+                height: 150px
+            div
+                &:hover
+                    cursor: pointer
+                h3
+                    font-size: 1rem
+                    font-family: arial
+                span
+                    font-size: .7rem
     #carrito
         background-color: $darkBlue
         height: max-content
         width: 25vw
         position: sticky
+        display: flex
+        flex-flow: column wrap
         top: 0
         h3
             padding: 1rem
@@ -39,9 +50,9 @@ section
             padding-right: 1rem
             #precioFinal
                 color: white
-            height: max-content
+                height: max-content
         #lista
-            height: 400px
+            min-height: 400px
             background-color: $lightBlue
             overflow: scroll
             padding: 1rem
@@ -67,3 +78,19 @@ section
                 border-bottom: 4px solid $lightOrange
                 text-decoration: none
                 color: $lightOrange
+    #envio
+        position: sticky
+        top: 95%
+
+@media ( max-width: 800px )
+    section 
+        padding: 0
+        #productos
+            width: 100%
+            div[id]
+                flex-basis: 100%
+                margin: 0
+        #carrito
+            width: 100vw
+        
+    

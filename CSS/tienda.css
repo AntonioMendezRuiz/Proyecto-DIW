@@ -351,28 +351,34 @@ footer {
 }
 section {
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 section #productos {
-  margin: 3rem;
-  width: 60%;
-  display: grid;
-  grid-template-columns: repeat(4, max-content);
-  grid-auto-rows: max-content;
-  gap: 2rem;
+  padding: 1rem;
+  margin: rem;
+  width: 70%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  justify-content: space-between;
 }
-section #productos img {
+section #productos div {
+  width: 30%;
+  margin: 0.5rem;
+}
+section #productos div img {
   width: auto;
   height: 150px;
 }
-section #productos div:hover {
+section #productos div div:hover {
   cursor: pointer;
 }
-section #productos div h3 {
+section #productos div div h3 {
   font-size: 1rem;
   font-family: arial;
 }
-section #productos div span {
+section #productos div div span {
   font-size: 0.7rem;
 }
 section #carrito {
@@ -380,6 +386,8 @@ section #carrito {
   height: max-content;
   width: 25vw;
   position: sticky;
+  display: flex;
+  flex-flow: column wrap;
   top: 0;
 }
 section #carrito h3 {
@@ -393,13 +401,13 @@ section #carrito #footerC {
   align-items: center;
   justify-content: space-between;
   padding-right: 1rem;
-  height: max-content;
 }
 section #carrito #footerC #precioFinal {
   color: white;
+  height: max-content;
 }
 section #carrito #lista {
-  height: 400px;
+  min-height: 400px;
   background-color: #88C9F2;
   overflow: scroll;
   padding: 1rem;
@@ -429,6 +437,26 @@ section #carrito a:hover {
   border-bottom: 4px solid #F2AF5C;
   text-decoration: none;
   color: #F2AF5C;
+}
+section #envio {
+  position: sticky;
+  top: 95%;
+}
+
+@media (max-width: 800px) {
+  section {
+    padding: 0;
+  }
+  section #productos {
+    width: 100%;
+  }
+  section #productos div[id] {
+    flex-basis: 100%;
+    margin: 0;
+  }
+  section #carrito {
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=tienda.css.map */
