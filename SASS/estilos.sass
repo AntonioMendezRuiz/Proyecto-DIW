@@ -112,7 +112,7 @@ header
     @include cabecera
     justify-content: space-between
 nav
-    @include grid(8)
+    display: flex
     @include navegador
 
 .idiomas
@@ -209,6 +209,7 @@ section
     display: flex
     justify-content: center
     position: relative
+    margin-bottom: 2rem
     video
         width: 50%
     .controles
@@ -226,14 +227,38 @@ section
             margin-right: 2%
         span
             min-width: max-content
-            &#play
-                display: none
-        #progress
+        .fa-play
+            display: none
+        .progress
             width: 70%
             
-        #volume
+        .volume
             width: 15%
-
+.audio
+    display: flex
+    justify-content: center
+    align-self: center
+    width: 20%
+    .controles
+        z-index: 100
+        display: flex
+        align-items: center
+        bottom: 0
+        background-color: $darkBlue
+        height: max-content
+        padding: .5rem
+        opacity: 60%
+        *
+            margin-right: 2%
+        span
+            min-width: max-content
+        .fa-pause
+            display: none
+        .progress
+            width: 70%
+            
+        .volume
+            width: 15%
 
 footer 
     @include grid(3)
@@ -275,7 +300,12 @@ footer
 
     nav 
         justify-content: left
-        @include grid(4) 
+        display: flex
+        div.controles
+            width: 30vw
+        input.busqueda 
+            margin-left: 0
+            width: 15%
     
     section 
         padding: 0

@@ -65,10 +65,7 @@ header .telefono, header .correo {
 }
 
 nav {
-  display: grid;
-  grid-template-columns: repeat(8, max-content);
-  grid-auto-rows: max-content;
-  gap: 0;
+  display: flex;
   justify-self: stretch;
   background-color: #1B70A6;
   justify-content: right;
@@ -222,6 +219,7 @@ section .card {
   display: flex;
   justify-content: center;
   position: relative;
+  margin-bottom: 2rem;
 }
 .video video {
   width: 50%;
@@ -244,13 +242,45 @@ section .card {
 .video .controles span {
   min-width: max-content;
 }
-.video .controles span#play {
+.video .controles .fa-play {
   display: none;
 }
-.video .controles #progress {
+.video .controles .progress {
   width: 70%;
 }
-.video .controles #volume {
+.video .controles .volume {
+  width: 15%;
+}
+
+.audio {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 20%;
+}
+.audio .controles {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  background-color: #1B70A6;
+  height: max-content;
+  padding: 0.5rem;
+  opacity: 60%;
+}
+.audio .controles * {
+  margin-right: 2%;
+}
+.audio .controles span {
+  min-width: max-content;
+}
+.audio .controles .fa-pause {
+  display: none;
+}
+.audio .controles .progress {
+  width: 70%;
+}
+.audio .controles .volume {
   width: 15%;
 }
 
@@ -312,10 +342,14 @@ footer {
 
   nav {
     justify-content: left;
-    display: grid;
-    grid-template-columns: repeat(4, max-content);
-    grid-auto-rows: max-content;
-    gap: 0;
+    display: flex;
+  }
+  nav div.controles {
+    width: 30vw;
+  }
+  nav input.busqueda {
+    margin-left: 0;
+    width: 15%;
   }
 
   section {
