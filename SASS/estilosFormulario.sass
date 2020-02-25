@@ -1,0 +1,58 @@
+@import estilos.css
+
+$darkBlue : #1B70A6
+$lightBlue : #88C9F2
+$lightOrange : #F2AF5C
+
+@mixin flex
+    display: flex
+    flex-flow: row wrap
+
+.contenedor
+    @include flex
+    justify-content: center
+    background-color: #DDD
+    height: 78.5vh
+    form
+        @include flex
+        width: 35%
+        min-width: 325px
+        padding: 1.5rem
+        margin: 2rem
+        border: 1px solid gray
+        border-radius: 10px
+        background-color: white
+        box-shadow: 2px 1px 2px gray
+        h2
+            width: 100%
+            text-align: center
+            margin-bottom: 1rem
+        p
+            width: 40%
+        input
+            width: 60%
+            height: 1.7rem
+        .condiciones
+            width: 90%
+            align-self: center
+        input[type ="checkbox"]
+            width: 10%
+            height: 1rem
+            justify-self: left
+            align-self: center
+            margin-bottom: 1rem
+        .enviar
+            width: max-content
+            margin: auto
+            padding: .25rem .75rem
+            height: max-content
+            border: 2px solid $lightBlue
+            background-color: $darkBlue
+            color: white
+            &:hover
+                background-color: $lightOrange
+                color: $darkBlue
+
+@media (max-width: 800px)
+    .contenedor
+        height: auto

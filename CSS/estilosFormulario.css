@@ -1,0 +1,64 @@
+@import "estilos.css";
+.contenedor {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: #DDD;
+  height: 78.5vh;
+}
+.contenedor form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 35%;
+  min-width: 325px;
+  padding: 1.5rem;
+  margin: 2rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 1px 2px gray;
+}
+.contenedor form h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contenedor form p {
+  width: 40%;
+}
+.contenedor form input {
+  width: 60%;
+  height: 1.7rem;
+}
+.contenedor form .condiciones {
+  width: 90%;
+  align-self: center;
+}
+.contenedor form input[type=checkbox] {
+  width: 10%;
+  height: 1rem;
+  justify-self: left;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+.contenedor form .enviar {
+  width: max-content;
+  margin: auto;
+  padding: 0.25rem 0.75rem;
+  height: max-content;
+  border: 2px solid #88C9F2;
+  background-color: #1B70A6;
+  color: white;
+}
+.contenedor form .enviar:hover {
+  background-color: #F2AF5C;
+  color: #1B70A6;
+}
+
+@media (max-width: 800px) {
+  .contenedor {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=estilosFormulario.css.map */

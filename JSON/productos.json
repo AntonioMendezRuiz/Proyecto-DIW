@@ -1,0 +1,56 @@
+[
+    {
+        "producto": "Advance",
+        "descripcion": "Comida para gatos",
+        "precio": "15",
+        "url": "../Imagenes/Productos/advance.jpg"
+    },
+    {
+        "producto": "Ultima",
+        "descripcion": "Comida para gatos de gran calidad",
+        "precio": "24",
+        "url": "../Imagenes/Productos/ultima.jpg"
+    },
+    {
+        "producto": "Royal Canin",
+        "descripcion": "Comida para perros de la mejor calidad",
+        "precio": "60",
+        "url": "../Imagenes/Productos/royalcanin.jpg"
+    },
+    {
+        "producto": "Purina",
+        "descripcion": "Comida para perros",
+        "precio": "17",
+        "url": "../Imagenes/Productos/purina.jpg"
+    },
+    {
+        "producto": "Versele Laga",
+        "descripcion": "Comida para pajaros",
+        "precio": "25",
+        "url": "../Imagenes/Productos/verselelaga.jpg"
+    },
+    {
+        "producto": "Psittacus",
+        "descripcion": "Comida para pajaros",
+        "precio": "9",
+        "url": "../Imagenes/Productos/psittacus.jpg"
+    },
+    {
+        "producto": "Idepet",
+        "descripcion": "Pelota de juguete para perros",
+        "precio": "7",
+        "url": "../Imagenes/Productos/idepet.jpg"
+    },
+    {
+        "producto": "PipiFren",
+        "descripcion": "Columpio para aves",
+        "precio": "2",
+        "url": "../Imagenes/Productos/PipiFren.jpg"
+    },
+    {
+        "producto": "Pecute",
+        "descripcion": "juguete para gatos",
+        "precio": "10",
+        "url": "../Imagenes/Productos/pecute.jpg"
+    }
+]

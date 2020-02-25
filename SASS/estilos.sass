@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap')
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css")
+
+$darkBlue : #1B70A6
+$lightBlue : #88C9F2
+$lightOrange : #F2AF5C
+
+@keyframes animacion 
+    from 
+        opacity: 0
+        margin-left: -50%
+        background-color: $lightBlue 
+    to 
+        margin-left: -20%
+        opacity: 92%
+        background-color: $lightBlue
+
+
+@mixin grid($columnas, $filas:0, $gap:0)
+    display: grid
+    grid-template-columns: repeat($columnas, max-content)
+    @if $filas == 0
+        grid-auto-rows: max-content
+    @else
+        grid-template-rows: repeat($filas, max-content)
+    gap: $gap
+
+@mixin navegador
+    justify-self: stretch
+    background-color: $darkBlue
+    justify-content: right 
+    padding-right: 3%
+    a 
+        text-decoration: none
+        padding: 1rem
+        color: white
+        border-bottom: 4px solid $darkBlue
+        &:hover 
+            border-bottom: 4px solid $lightOrange
+            text-decoration: none
+            color: $lightOrange
+    .lupa
+        align-self: center
+        margin-left: .5rem
+        cursor: pointer
+    .busqueda
+        height: 1.5rem
+        width: 8rem
+        align-self: center
+        margin-left: 3rem
+    #registro
+        justify-self: stretch
+        color: white
+        &:hover
+            background-color: $darkBlue
+            cursor: pointer 
+            
+    
+
+        
+
+
+@mixin cabecera
+    align-items: center
+    justify-items: center
+    background-color: $lightBlue
+    color: white
+    font-weight: bold
+    
+
+    img 
+        height: 4rem
+        width: auto
+        
+
+    a 
+        text-decoration: none
+        color: white
+        &:hover 
+            text-decoration: none
+            color: white
+    .telefono, .correo 
+        font-size: 1rem
+        
+
+
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    outline: 0
+
+h1, h2
+    font-family: "Cinzel"
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+    font-weight: bold
+    color: white
+    float: right
+    padding-top: .5rem
+    margin-bottom: 0
+   
+
+h3, h4
+    font-family: "Cinzel"
+    text-decoration: underline
+
+header
+    @include grid(4)
+    @include cabecera
+    justify-content: space-between
+nav
+    display: flex
+    @include navegador
+
+.idiomas
+    cursor: pointer
+    #es
+        background-image: url("../Imagenes/banderas_sprites.png")
+        background-repeat: no-repeat
+        background-position: -1.3px -.75px
+        background-size: 67px 41px
+        height: 23.5px
+        width: 31.1px
+    #uk
+        background-image: url("../Imagenes/banderas_sprites.png")
+        background-repeat: no-repeat
+        background-position: -1.3px -24px
+        background-size: 67px 41px
+        height: 23.5px
+        width: 31.1px
+    #fr
+        background-image: url("../Imagenes/banderas_sprites.png")
+        background-repeat: no-repeat
+        background-position: -34.7px -.75px
+        background-size: 67px 41px
+        height: 23.5px
+        width: 31.1px
+
+.idiomas.dropdown 
+    display: block
+
+.dropdown-menu 
+    min-width: 0
+    width: max-content
+
+.dropdown-item 
+    padding: .5rem
+.modal-header
+    background-color: $darkBlue
+.modal-content     
+    border-radius: 10px
+
+.modal-footer
+    padding-bottom: 0
+    padding-top: 0
+    background-color: $darkBlue
+    
+.inicio
+    padding: 1rem
+    color: white
+    border-bottom: 4px solid $darkBlue
+    &:hover
+        border-bottom: 4px solid $lightOrange
+        text-decoration: none
+        color: $lightOrange
+#demo 
+    img 
+        width: 100%
+        height: 78.5vh
+    
+.carousel-caption 
+    background-color: $lightBlue
+    border-radius: 1rem
+    width: 40%
+    height: auto
+    padding-left: 10%
+    margin-left: -20%
+    opacity: 92%
+    animation: "animacion" 3s
+    -webkit-animation:"animacion" 3s 
+
+.dropdown
+    display: none
+    &:active 
+        border: none
+
+section 
+    padding: 0
+    .card
+        height: 90vh
+
+.imgop
+  align-self: center
+  width: 40%
+
+.card-img-top
+    width: 100%
+
+.avatar
+    vertical-align: middle
+    width: 50px
+    height: 50px
+    border-radius: 50%
+
+.video
+    display: flex
+    justify-content: center
+    position: relative
+    margin-bottom: 2rem
+    video
+        width: 50%
+    .controles
+        position: absolute
+        width: 50%
+        z-index: 100
+        display: flex
+        align-items: center
+        bottom: 0
+        background-color: $darkBlue
+        height: max-content
+        padding: .5rem
+        opacity: 60%
+        *
+            margin-right: 2%
+        span
+            min-width: max-content
+        .fa-play
+            display: none
+        .progress
+            width: 70%
+            
+        .volume
+            width: 15%
+.audio
+    display: flex
+    justify-content: center
+    align-self: center
+    width: 20%
+    .controles
+        z-index: 100
+        display: flex
+        align-items: center
+        bottom: 0
+        background-color: $darkBlue
+        height: max-content
+        padding: .5rem
+        opacity: 60%
+        *
+            margin-right: 2%
+        span
+            min-width: max-content
+        .fa-pause
+            display: none
+        .progress
+            width: 70%
+            
+        .volume
+            width: 15%
+
+footer 
+    @include grid(3)
+    justify-content: space-around
+    padding: 2rem
+    border-top: 2px solid $darkBlue
+    background-color: $lightBlue
+    font-weight: bold
+
+.desarrolladores 
+    background: $lightBlue
+    text-align: center
+.modal-body
+    background-color: $lightBlue
+                
+.linkregistro
+    padding: 0
+    border: 0
+    &:hover
+        border:0
+        color: $darkBlue
+
+@media (max-width: 950px)
+    #demo 
+        img 
+            width: 100%
+            height: auto
+
+@media (max-width: 800px)
+    .titulo 
+        display: none
+
+    header
+        @include grid(2)
+    .correo, .telefono
+        display: none
+    .none
+        display: none
+
+    nav 
+        justify-content: left
+        display: flex
+        div.controles
+            width: 30vw
+        input.busqueda 
+            margin-left: 0
+            width: 15%
+    
+    section 
+        padding: 0
+        .card
+            height: auto
+            width: 100%
+
+
+    footer
+        @include grid(1,0,.5rem)
+        padding: .5rem
+    .dropdown
+        display: grid
+
+    iframe 
+        width: 100%
+    
+    .video 
+        video
+            width: 100%
+        .controles
+            width: 100%    

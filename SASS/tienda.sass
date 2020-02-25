@@ -1,0 +1,112 @@
+@import 'estilos.sass'
+
+$darkBlue : #1B70A6
+$lightBlue : #88C9F2
+$lightOrange : #F2AF5C
+section
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    #productos
+        padding: 1rem
+        margin: rem
+        width: 70%
+        display: flex
+        flex-flow: row wrap
+        justify-items: center
+        justify-content: space-between
+        div
+            display: flex
+            flex-flow: column
+            border: 3px solid $lightBlue
+            width: 30%
+            margin: .5rem
+            text-align: center
+            padding: 1rem
+            img
+                align-self: center
+                border: $darkBlue solid 3px
+                width: auto
+                height: 150px
+            div
+                &:hover
+                    cursor: pointer
+                h3
+                    font-size: 1rem
+                    font-family: arial
+                span
+                    font-size: .7rem
+        div:hover
+            cursor: pointer
+            background-color: $darkBlue
+            color: white
+            img
+                border:  solid 3px $lightOrange
+
+
+    #carrito
+        background-color: $darkBlue
+        height: max-content
+        width: 25vw
+        position: sticky
+        display: flex
+        flex-flow: column wrap
+        top: 0
+        border: 3px solid $darkBlue
+        border-top: 3px solid $lightBlue
+        h3
+            padding: 1rem
+            font-family: arial
+            color: white
+            text-decoration: none
+        #footerC
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding-right: 1rem
+            #precioFinal
+                color: white
+                height: max-content
+        #lista
+            min-height: 400px
+            background-color: $lightBlue
+            overflow: scroll
+            padding: 1rem
+            div
+                display: flex
+                // row-gap: 3rem
+                justify-content: space-between
+                align-items: center
+                div
+                    width: 40%
+                span 
+                    width: 10%
+                    text-align: right
+                input
+                    width: 3rem
+            
+        a
+            text-decoration: none
+            padding: 1rem
+            color: white
+            border-bottom: 4px solid $darkBlue
+            &:hover
+                border-bottom: 4px solid $lightOrange
+                text-decoration: none
+                color: $lightOrange
+    #envio
+        position: sticky
+        top: 95%
+
+@media ( max-width: 800px )
+    section 
+        padding: 0
+        #productos
+            width: 100%
+            div[id]
+                flex-basis: 100%
+                margin: 0
+        #carrito
+            width: 100vw
+        
+    
