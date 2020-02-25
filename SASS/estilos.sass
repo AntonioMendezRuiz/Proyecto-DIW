@@ -244,10 +244,11 @@ section
         display: flex
         align-items: center
         bottom: 0
-        background-color: $darkBlue
+        background-color: $lightBlue
         height: max-content
         padding: .5rem
         opacity: 60%
+        border-radius: 1rem
         *
             margin-right: 2%
         span
@@ -256,9 +257,9 @@ section
             display: none
         .progress
             width: 70%
-            
         .volume
             width: 15%
+     
 
 footer 
     @include grid(3)
@@ -288,6 +289,7 @@ footer
             height: auto
 
 @media (max-width: 800px)
+    
     .titulo 
         display: none
 
@@ -301,11 +303,13 @@ footer
     nav 
         justify-content: left
         display: flex
-        div.controles
-            width: 30vw
-        input.busqueda 
-            margin-left: 0
-            width: 15%
+        .audio
+            display: none
+            div.controles
+                width: 30vw
+            input.busqueda 
+                margin-left: 0
+                width: 15%
     
     section 
         padding: 0

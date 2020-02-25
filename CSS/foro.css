@@ -263,10 +263,11 @@ section .card {
   display: flex;
   align-items: center;
   bottom: 0;
-  background-color: #1B70A6;
+  background-color: #88C9F2;
   height: max-content;
   padding: 0.5rem;
   opacity: 60%;
+  border-radius: 1rem;
 }
 .audio .controles * {
   margin-right: 2%;
@@ -344,10 +345,13 @@ footer {
     justify-content: left;
     display: flex;
   }
-  nav div.controles {
+  nav .audio {
+    display: none;
+  }
+  nav .audio div.controles {
     width: 30vw;
   }
-  nav input.busqueda {
+  nav .audio input.busqueda {
     margin-left: 0;
     width: 15%;
   }
@@ -395,10 +399,13 @@ section table {
 }
 section table td, section table th {
   padding: 1rem;
+  border-top: 1px #1B70A6 solid;
 }
 section table tr {
   background-color: #88C9F2;
-  border-bottom: 1px #1B70A6 solid;
+}
+section table tr th {
+  border: none;
 }
 section table th {
   background-color: #1B70A6;
