@@ -32,6 +32,7 @@ $(function () {
         }
     });
     $('.progress').each((index, e) => {
+        $(e).val(0)
         e.onclick = () => {
             let v = $(e).val()
             let d = $(e).parent().prev()[0].duration
