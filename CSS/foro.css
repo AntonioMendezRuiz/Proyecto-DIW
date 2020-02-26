@@ -242,7 +242,7 @@ section .card {
 .video .controles span {
   min-width: max-content;
 }
-.video .controles .fa-play {
+.video .controles .fa-pause {
   display: none;
 }
 .video .controles .progress {
@@ -389,27 +389,83 @@ footer {
 }
 section {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   padding: 1rem;
+}
+section h2 {
+  width: 100%;
+}
+section div {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
 }
 section table {
   border-collapse: collapse;
-  border-radius: 1em;
+  border-radius: 1rem;
   overflow: hidden;
-}
-section table td, section table th {
-  padding: 1rem;
-  border-top: 1px #1B70A6 solid;
+  width: 75%;
+  margin-bottom: 1rem;
 }
 section table tr {
   background-color: #88C9F2;
 }
-section table tr th {
-  border: none;
+section table tr td {
+  cursor: pointer;
+  padding: 1rem;
+  border-top: 1px #1B70A6 solid;
 }
-section table th {
+section table tr:hover {
   background-color: #1B70A6;
   color: white;
+}
+section table tr th {
+  padding: 1rem;
+  border-top: 1px #1B70A6 solid;
+  background-color: #1B70A6;
+  color: white;
+  border: none;
+}
+section aside {
+  width: 24%;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+section aside table {
+  border-radius: 0;
+  width: 100%;
+  border: 1px solid #1B70A6;
+}
+section aside table tr {
+  background-color: white;
+  color: black;
+}
+section .forotabs {
+  display: flex;
+  flex-flow: row nowrap;
+  width: max-content;
+  align-self: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+section .forotabs span {
+  background-color: #1B70A6;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+}
+section .forotabs span:hover {
+  color: #F2AF5C;
+}
+
+@media screen and (max-width: 800px) {
+  section table {
+    width: 100%;
+  }
+  section aside {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=foro.css.map */

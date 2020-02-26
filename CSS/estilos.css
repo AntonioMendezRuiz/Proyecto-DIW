@@ -242,7 +242,7 @@ section .card {
 .video .controles span {
   min-width: max-content;
 }
-.video .controles .fa-play {
+.video .controles .fa-pause {
   display: none;
 }
 .video .controles .progress {
