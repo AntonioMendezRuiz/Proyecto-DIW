@@ -496,6 +496,7 @@ section #carrito a:hover {
 section #envio {
   position: sticky;
   top: 95%;
+  color: white;
 }
 
 @media (max-width: 800px) {
