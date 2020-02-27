@@ -19,7 +19,7 @@ function calculaPrecioFinal() {
         var precio = $(val).html()
         precioFinal += Number(precio.replace('€', ''))
     })
-    if (precioFinal < 200) {
+    if (precioFinal < 200 && precioFinal >0) {
         precioFinal += 15
         $('#envio').html('* Gastos de envío: 15€')
     }
