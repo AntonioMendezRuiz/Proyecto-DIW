@@ -275,7 +275,7 @@ section .card {
 .audio .controles span {
   min-width: max-content;
 }
-.audio .controles .fa-pause {
+.audio .controles .fa-play {
   display: none;
 }
 .audio .controles .progress {
