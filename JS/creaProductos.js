@@ -2,7 +2,7 @@ var lista = []
 function muestraLista(lista) {
     $('#lista').html('')
     lista.forEach((producto, index) => {
-        $('#lista').html($('#lista').html() + `<div><div>${producto.producto}</div><input onchange='calculaPrecio(this, ${producto.precio})' type='number' value='1' min='1'><span name='precio'>${producto.precio}€</span><span onclick='eliminar(${index})' class='fa fa-trash'><span></div>`)
+        $('#lista').html($('#lista').html() + `<div><div>${producto.producto}</div><input onchange='calculaPrecio(this, ${producto.precio})' type='number' value='${producto.cantidad}' min='1'><span name='precio'>${producto.precio*producto.cantidad}€</span><span onclick='eliminar(${index})' class='fa fa-trash'><span></div>`)
     })
     calculaPrecioFinal()
 }
@@ -39,13 +39,18 @@ $(document).ready(() => {
         method: "GET",
         contentType: "json",
         success: (respuesta) => {
-            console.log(productos)
+            console.log(respuesta)
             respuesta.forEach((producto, index) => {
                 $('#productos').html($('#productos').html() + `<div id=${index}><img src="${producto.url}"><br><br><h3>${producto.producto}</h3><span>${producto.descripcion}</span><br><span>${producto.precio}€</span></div>`)
             })
             $('#productos > div').click((evento) => {
                 if (lista.indexOf(respuesta[evento.currentTarget.id]) == -1) {
                     lista.push(respuesta[evento.currentTarget.id])
+                    lista[lista.length-1].cantidad = 1
+                }
+                else{
+                    let i = lista.indexOf(respuesta[evento.currentTarget.id])
+                    lista[i].cantidad += 1
                 }
                 muestraLista(lista)
             })
