@@ -41,7 +41,7 @@ $(document).ready(() => {
         success: (respuesta) => {
             console.log(respuesta)
             respuesta.forEach((producto, index) => {
-                $('#productos').html($('#productos').html() + `<div id=${index}><img src="${producto.url}"><br><br><h3>${producto.producto}</h3><span>${producto.descripcion}</span><br><span>${producto.precio}€</span></div>`)
+                $('#productos').html($('#productos').html() + `<div id=${index}><img src="${producto.url}" alt="Foto del producto ${producto.producto}"><br><br><h3>${producto.producto}</h3><span>${producto.descripcion}</span><br><span>${producto.precio}€</span></div>`)
             })
             $('#productos > div').click((evento) => {
                 if (lista.indexOf(respuesta[evento.currentTarget.id]) == -1) {
