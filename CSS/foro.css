@@ -419,6 +419,14 @@ section table tr:hover {
   background-color: #1B70A6;
   color: white;
 }
+section table tr a {
+  text-decoration: none;
+  color: black;
+}
+section table tr:hover a {
+  color: white;
+  text-decoration: none;
+}
 section table tr th {
   padding: 1rem;
   border-top: 1px #1B70A6 solid;
@@ -438,7 +446,14 @@ section aside table {
 }
 section aside table tr {
   background-color: white;
+}
+section aside table tr a {
+  text-decoration: none;
   color: black;
+}
+section aside table tr:hover a {
+  color: white;
+  text-decoration: none;
 }
 section .forotabs {
   display: flex;

@@ -8,13 +8,13 @@ section
     display: flex
     flex-flow: column nowrap
     padding: 1rem
-    h2 
+    h2
         width: 100%
     div
         display: flex
         justify-content: space-between
         flex-flow: row nowrap
-    table 
+    table
         border-collapse: collapse
         border-radius: 1rem
         overflow: hidden
@@ -29,7 +29,13 @@ section
             &:hover
                 background-color: $darkBlue
                 color: white
-            th 
+            a
+                text-decoration: none
+                color: black
+            &:hover a
+                color: white
+                text-decoration: none
+            th
                 padding: 1rem
                 border-top: 1px $darkBlue solid
                 background-color: $darkBlue
@@ -45,7 +51,12 @@ section
             border: 1px solid $darkBlue
             tr
                 background-color: white
-                color: black
+                a
+                    text-decoration: none
+                    color: black
+                &:hover a
+                    color: white
+                    text-decoration: none
     .forotabs
         display: flex
         flex-flow: row nowrap
@@ -54,7 +65,7 @@ section
         justify-content: center
         border-radius: 1rem
         overflow: hidden
-        span 
+        span
             background-color: $darkBlue
             padding: 1rem
             cursor: pointer
@@ -62,13 +73,10 @@ section
             //border: 2px solid $lightBlue
             &:hover
                 color: $lightOrange
-                
+
 @media screen and ( max-width: 800px )
-    section 
-        table 
+    section
+        table
             width: 100%
         aside
             display: none
-        
-    
-    
